@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>音乐欣赏</title>
+  <link href="./img/nes.ico" rel="shortcut icon"/>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+      jQuery(document).ready(function($){
+          //回到顶部
+          $('.scroll_top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+          //跳到指定位置
+          $('.scroll_a').click(function(){$('html,body').animate({scrollTop:$('#update').offset().top}, 800);});
+          //跳到底部
+          $('.scroll_bottom').click(function(){$('html,body').animate({scrollTop:$('.bottom').offset().top}, 800);});
+      });
+  </script>
+
+
+  <style>
+    *{
+      padding:0px;
+      margin:0px;
+    }
+    #banner {
+      background-image: url(img/img-obj-ubugi.png);
+      background-size: cover;
+      height: 760px;
+      width: 60%;
+      float: left;
+    }
+    #main_title {
+      height: 52px;
+      width: 251px;
+      text-align: center;
+      vertical-align: middle;
+      background-image: url(img/crose_background.png);
+      color: #A38E63;
+      font-family: "宋体", "华文宋体", "新宋体", "明朝";
+      padding-top: 30px;
+      font-weight: bold;
+    }
+    #main_title_white {
+      height: 52px;
+      width: 251px;
+      text-align: center;
+      vertical-align: middle;
+      background-image: url(img/crose_background_white.png);
+      color: #FFFFFF;
+      font-family: "宋体", "华文宋体", "新宋体", "明朝";
+      padding-top: 30px;
+      font-weight: bold;
+    }
+    #update {
+      background-color: #000;
+      color: #FFF;
+      font-family: "宋体", "华文宋体";
+      background-image: url(img/music/kaoru-cover.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .pdtd {
+      padding: 50px;
+    }
+    #item_title {
+      font-family: "宋体", "华文宋体", "新宋体", "明朝";
+      font-size: 24px;
+      text-decoration: none;
+      color: #A38E63;
+      font-weight: bolder;
+    }
+    #bottom {
+      font-family: "黑体", "微软雅黑";
+      text-align: center;
+      vertical-align: middle;
+      color: #FFF;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      clear: both;
+      width: 100%;
+      background-color: #A38E63;
+    }
+    hr {
+      color: #A38E63;
+    }
+    #left_banner {
+      float: left;
+      height: 760px;
+      width: 40%;
+    }
+    #countant1 {
+      clear: both;
+      height: auto;
+      width: 100%;
+      background-color: #FFF;
+    }
+    body,td,th {
+      font-family: "黑体", "微软雅黑";
+    }
+    #bottomtab {
+      margin: 0px;
+      padding: 0px;
+    }
+    #top_icon {
+      margin-top: 184px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+  </style>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#FFFFCC">
+<div id="left_banner">
+  <center>
+
+    <p><img src="img/Never Ending Story_main_logo.png" width="643" height="195" id="top_icon" /></p>
+    <p id="main_title">休息一下 音乐欣赏</p>
+  </center>
+</div>
+<div id="banner"></div>
+<div id="countant1" style="padding-top:60px;">
+  <center>
+    <p id="main_title" style="margin-bottom:60px">休息一下 音乐欣赏</p>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <table width="1300" border="1" bordercolor="#A38E63" cellspacing="0" cellpadding="0">
+    </table>
+    <p>&nbsp;</p>
+    <table width="900" border="0" cellspacing="35">
+      <tr>
+        <td>
+          <div id="player">
+            <div id="cover"></div>
+            <div id="play">
+              <p class="title1" title="Never Ending Story Main Theme.
+这首歌曲是 Never Ending Story 的主题音乐。">认真的雪</p>
+              <p class="title2">薛之谦</p>
+              <center>
+                <audio controls id="muaic_player">
+                  <source src="music/01.mp3" type="audio/ogg">
+                  <source src="music/01.mp3" type="audio/mpeg">
+                  很抱歉，您的浏览器不支持 audio 元素。
+                </audio>
+              </center>
+            </div>
+          </div>
+        </td>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="刚好遇见你">刚好遇见你</p>
+            <p class="title2">李玉刚</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/02.mp3" type="audio/ogg">
+                <source src="music/02.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+      </tr>
+      <tr>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="成都">成都</p>
+            <p class="title2">赵雷</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/03.mp3" type="audio/ogg">
+                <source src="music/03.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="凉凉">凉凉</p>
+            <p class="title2">于毅,娄艺潇</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/04.mp3" type="audio/ogg">
+                <source src="music/04.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+      </tr>
+      <tr>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="爱在西元前">爱在西元前</p>
+            <p class="title2">周杰伦</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/05.mp3" type="audio/ogg">
+                <source src="music/05.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="时魔退散！">左耳</p>
+            <p class="title2">赵薇</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/06.mp3" type="audio/ogg">
+                <source src="music/06.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+      </tr>
+      <tr>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="神使达成">手心的蔷薇</p>
+            <p class="title2">林俊杰  邓紫棋</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/07.mp3" type="audio/ogg">
+                <source src="music/07.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+        <td><div id="player">
+          <div id="cover"></div>
+          <div id="play">
+            <p class="title1" title="魔之遗书">魔之遗书</p>
+            <p class="title2">和田薰</p>
+            <center>
+              <audio controls id="muaic_player">
+                <source src="music/08.mp3" type="audio/ogg">
+                <source src="music/08.mp3" type="audio/mpeg">
+                很抱歉，您的浏览器不支持 audio 元素。
+              </audio>
+            </center>
+          </div>
+        </div></td>
+      </tr>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+              <div style="padding: 0px; margin: 0px; color: rgb(198, 212, 223); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(27, 40, 56); clear: left;"></div>
+              <div class="rule" style="padding: 0px; margin: 0px; height: 8px; /* [disabled]color: rgb(198, 212, 223); */ font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; /* [disabled]background-color: rgb(27, 40, 56); */"></div>
+              <div class="valve_links" style="padding: 0px; margin: 8px 0px 0px; float: inherit; font-family: 'Motiva Sans', sans-serif; font-weight: normal; font-size: 14px; /* [disabled]color: rgb(97, 104, 109); */ font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; /* [disabled]background-color: rgb(27, 40, 56); */">
+              </div>
+              <p></p></td>
+          </tr>
+        </table>
+      </center>
+    </div>
+</body>
+</html>

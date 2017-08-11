@@ -6,12 +6,6 @@
     <meta http-equiv="refresh" content="0;url=./welcomed.html">
     <title></title>
 </head>
-/**
-* Created by PhpStorm.
-* User: 张天元
-* Date: 2017/8/8
-* Time: 11:15
-*/
 <?php
 $name=$_POST['name'];
 $userSex=$_POST['sex'];

@@ -32,34 +32,30 @@
             <!-- 表示一个成功的或积极的动作 -->
             <button type="button" class="btn btn-success">标记修复完成</button>
             <!-- 信息警告消息的上下文按钮 -->
-            <button type="button" class="btn btn-info">回到前端页面</button>
+            <a href="./index.html" target="_blank" <button type="button" class="btn btn-info">回到前端页面</button>  </a>
             <!-- 表示应谨慎采取的动作 -->
-            <button type="button" class="btn btn-warning">归档所有数据</button>
+            <a href="./back.php" target="_blank"  <button type="button" class="btn btn-success">刷新本页面</button>     </a>
+            <!-- 信息警告消息的上下文按钮 -->
+            <a href="./guidang.php" target="_blank" <button type="button" class="btn btn-warning">归档所有数据</button>    </a>
             <!-- 表示一个危险的或潜在的负面动作 -->
             <button type="button" class="btn btn-danger">删除最早的一组数据</button>
             <!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
-            <button type="button" class="btn btn-primary" title="Popover title"
-                    data-container="body" data-toggle="popover" data-placement="top"
-                    data-content="顶部的 Popover 中的一些内容"
-            >点此月莫虫合</button>
-
-
+            <a href="./music.html" target="_blank" <button type="button" class="btn btn-danger" >休息一下听点歌</button>   </a>
+            <a href="./ruodianjian.html" target="_blank" <button type="button" class="btn btn-danger" >弱电间分布图</button>   </a>
+            <a href="./mingxie.html" target="_blank" <button type="button" class="btn btn-success" >常用业务系统</button>   </a>
+            <a href="./mingxie.html" target="_blank" <button type="button" class="btn btn-warning" >彩蛋</button>   </a>
+            <a href="./yijingguidang.php" target="_blank" <button type="button" class="btn btn-info">查询已经归档数据</button>  </a>
 
 
             <!-- 与数据库交互的PHP部分 -->
             <?php
-
-
-
             $con = mysql_connect("localhost","root","root");
             if (!$con)
             {
                 die('Could not connect: ' . mysql_error());
             }
             mysql_select_db("wlbx", $con);
-            $result = mysql_query("SELECT * FROM repair");
-
-
+            $result = mysql_query("SELECT * FROM repair WHERE type=''");
             echo "<table border='1'><table class=\"table table-striped\">
             <tr>
             <th>报修时间</th>
